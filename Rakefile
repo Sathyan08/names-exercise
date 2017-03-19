@@ -4,7 +4,7 @@ Bundler.require(:default)
 $LOAD_PATH << __dir__
 
 require 'active_support/all'
-require_all './lib'
+require_all './lib/models'
 
 unless ENV['APP_MODE'] == 'production'
   require 'pry'
