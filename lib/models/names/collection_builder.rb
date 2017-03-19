@@ -1,7 +1,7 @@
 module Names
   class CollectionBuilder
-    LAST_NAME_COLUMN = 0
-    FIRST_NAME_COLUMN = 1
+    LAST_NAME_POSITION = 0
+    FIRST_NAME_POSITION = 1
     LETTERS_REGEX = /[a-zA-Z]/
     NON_LETTERS_REGEX = /[^a-zA-Z]/
 
@@ -14,15 +14,16 @@ module Names
 
         # Take the first two words
         row = line.split(' ')
-        first_name = row[FIRST_NAME_COLUMN].strip
+        first_name = row[FIRST_NAME_POSITION].try(:strip)
 
-          # Cuts off the commas off of the last name or resolves to nil if it does not follow the format.
-        last_name = row[LAST_NAME_COLUMN][0..-2].strip if last_name.end_with?(',')
-
-        # skips the line if the first two words contain any non-letter characters
-        next if NON_LETTERS_REGEX.match(first_name) || NON_LETTERS_REGEX.match(last_name)
+        # Cuts off the commas off of the last name or resolves to nil if it does not follow the format.
+        last_name = row[LAST_NAME_POSITION]
+        last_name = last_name[0..-2].try(:strip) if last_name.present?
 
         if first_name.present? && last_name.present?
+          # skips the line if the first two words contain any non-letter characters
+          next if NON_LETTERS_REGEX.match(first_name) || NON_LETTERS_REGEX.match(last_name)
+
           name = Names::Name.new(first_name, last_name)
           name_collection << name
         end
