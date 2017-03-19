@@ -26,6 +26,12 @@ module Names
       self
     end
 
+    private
+
+    def initialize(unique_names_list_length = 25)
+      @unique_names_list_length = unique_names_list_length
+    end
+
     def unique_full_names_registry
       @unique_full_names_registry ||= Set.new
     end
@@ -40,12 +46,6 @@ module Names
 
     def completely_unique_name_registry
       @unique_name_registry ||= Set.new
-    end
-
-    private
-
-    def initialize(unique_names_list_length = 25)
-      @unique_names_list_length = unique_names_list_length
     end
 
     def should_register_as_completely_unique?(name)
