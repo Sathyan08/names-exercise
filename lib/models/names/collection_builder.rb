@@ -15,10 +15,9 @@ module Names
         # Take the first two words
         row = line.split(' ')
         first_name = row[FIRST_NAME_COLUMN].strip
-        last_name = row[LAST_NAME_COLUMN].strip
 
-        # Cuts off the commas off of the last name
-        last_name = last_name[0..-2] if last_name.end_with?(',')
+          # Cuts off the commas off of the last name or resolves to nil if it does not follow the format.
+        last_name = row[LAST_NAME_COLUMN][0..-2].strip if last_name.end_with?(',')
 
         # skips the line if the first two words contain any non-letter characters
         next if NON_LETTERS_REGEX.match(first_name) || NON_LETTERS_REGEX.match(last_name)
