@@ -1,0 +1,44 @@
+1. The unique count of full names is:
+________________________________________
+7
+
+
+2. The unique count of last names is:
+________________________________________
+4
+
+
+3. The unique count of first names is:
+________________________________________
+5
+
+
+4. The ten most common last names are:
+________________________________________
+Thomas, 1
+Vasquez, 1
+Upton, 2
+Smith, 3
+
+
+5. The ten most common first names are:
+________________________________________
+John, 1
+Sam, 1
+Tom, 1
+Cesar, 1
+Joan, 3
+
+
+6. The first 25 completely unique names are:
+________________________________________
+Smith, Joan
+Vasquez, Cesar
+
+
+7. The modified names are:
+________________________________________
+Vasquez, Joan
+Smith, Cesar
+
+
