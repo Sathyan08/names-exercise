@@ -3,7 +3,13 @@ module Names
     attr_reader :unique_names_list_length
 
     def question_answers
-      @question_answers ||= Names::Answers.new(self)
+      @question_answers ||= Names::Answers.new(
+                                                unique_full_names_registry: unique_full_names_registry,
+                                                first_name_registry: first_name_registry,
+                                                last_name_registry: last_name_registry,
+                                                completely_unique_name_registry: completely_unique_name_registry,
+                                                unique_names_list_length: unique_names_list_length
+                                              )
     end
 
     def <<(name)

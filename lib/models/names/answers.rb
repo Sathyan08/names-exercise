@@ -1,6 +1,6 @@
 module Names
   class Answers
-    attr_reader :name_collection, :first_name_registry, :last_name_registry
+    attr_reader :unique_full_names_registry, :first_name_registry, :last_name_registry, :completely_unique_name_registry, :unique_names_list_length
 
     # This constant is 40 underscores to separate the answer header from the actual answer
     HEADER_ANSWER_DIVIDING_LINE = '_' * 40
@@ -12,8 +12,11 @@ module Names
 
     private
 
-    def initialize(name_collection)
-      @name_collection = name_collection
+    def initialize(unique_full_names_registry:, first_name_registry:, last_name_registry:, completely_unique_name_registry:, unique_names_list_length:)
+      @unique_full_names_registry = unique_full_names_registry
+      @first_name_registry = first_name_registry.sort_by { |name, count| }
+      @last_name_registry = last_name_registry.sort_by { |name, count| }
+      @completely_unique_name_registry = completely_unique_name_registry
     end
 
     def sorted_last_name_registry
@@ -51,42 +54,42 @@ module Names
     def unique_full_names_count_answer
       @unique_full_names_count_answer ||= Hashie::Mash.new({
         header: "The unique count of full names is:",
-        answers: name_collection.unique_full_names_registry.count
+        answers: unique_full_names_registry.count
         })
     end
 
     def unique_last_names_count_answer
       @unique_last_names_count_answer ||= Hashie::Mash.new({
         header: "The unique count of last names is:",
-        answers: name_collection.last_name_registry.count
+        answers: last_name_registry.count
         })
     end
 
     def unique_first_names_count_answer
       @unique_first_names_count_answer ||= Hashie::Mash.new({
         header: "The unique count of first names is:",
-        answers: name_collection.first_name_registry.count
+        answers: first_name_registry.count
         })
     end
 
     def ten_most_common_last_names_answer
       @ten_most_common_last_names_answer ||= Hashie::Mash.new({
         header: "The ten most common last names are:",
-        answers: sorted_last_name_registry.last(10).map { |name, count| name_and_count(name, count) }
+        answers: last_name_registry.last(10).map { |name, count| name_and_count(name, count) }
         })
     end
 
     def ten_most_common_first_names_answer
       @ten_most_common_first_names_answer ||= Hashie::Mash.new({
         header: "The ten most common first names are:",
-        answers: sorted_first_name_registry.last(10).map { |name, count| name_and_count(name, count) }
+        answers: first_name_registry.last(10).map { |name, count| name_and_count(name, count) }
         })
     end
 
     def completely_unique_names_answer
       @completely_unique_names_answer ||= Hashie::Mash.new({
-        header: "The first #{name_collection.unique_names_list_length} completely unique names are:",
-        answers: name_collection.completely_unique_name_registry.map(&:display_name)
+        header: "The first #{unique_names_list_length} completely unique names are:",
+        answers: completely_unique_name_registry.map(&:display_name)
         })
     end
 
@@ -102,8 +105,8 @@ module Names
     end
 
     def modified_names
-       unique_first_names = name_collection.completely_unique_name_registry.map(&:first_name)
-       unique_last_names = name_collection.completely_unique_name_registry.map(&:last_name)
+       unique_first_names = completely_unique_name_registry.map(&:first_name)
+       unique_last_names = completely_unique_name_registry.map(&:last_name)
 
        unique_modified_full_names = unique_first_names.zip(unique_last_names.reverse)
        unique_modified_full_names.map { |first_name, last_name| Names::Name.new(first_name, last_name) }

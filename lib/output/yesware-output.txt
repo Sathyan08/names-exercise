@@ -15,22 +15,22 @@ ________________________________________
 
 4. The ten most common last names are:
 ________________________________________
-Thomas, 1
-Vasquez, 1
-Upton, 2
 Smith, 3
+Thomas, 1
+Upton, 2
+Vasquez, 1
 
 
 5. The ten most common first names are:
 ________________________________________
+Joan, 3
 John, 1
 Sam, 1
 Tom, 1
 Cesar, 1
-Joan, 3
 
 
-6. The first 25 completely unique names are:
+6. The first  completely unique names are:
 ________________________________________
 Smith, Joan
 Vasquez, Cesar
