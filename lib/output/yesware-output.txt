@@ -1,21 +1,20 @@
 1. The unique count of full names is:
 ________________________________________
-49992
+48439
 
 
 2. The unique count of last names is:
 ________________________________________
-475
+470
 
 
 3. The unique count of first names is:
 ________________________________________
-46487
+3012
 
 
 4. The ten most common last names are:
 ________________________________________
-Crist, 127
 Becker, 128
 Johns, 128
 Romaguera, 128
@@ -25,77 +24,78 @@ Hilll, 134
 Ortiz, 135
 Lang, 136
 Barton, 143
+O, 614
 
 
 5. The ten most common first names are:
 ________________________________________
-Ramon -- et, 4
-Woodrow -- ut, 4
-Summer -- voluptatem, 5
-Julian -- est, 5
-Nolan -- ut, 5
-Rasheed -- et, 5
-Enrico -- qui, 5
-Mitchel -- et, 5
-Rex -- et, 6
-Jacinto -- et, 6
+Keon, 31
+Stephania, 31
+Tara, 32
+Hara, 104
+Kon, 106
+Keefe, 108
+Connell, 109
+Reilly, 109
+Amore, 120
+Conner, 124
 
 
 6. The first  completely unique names are:
 ________________________________________
-Graham, Mckenna -- ut
-Marvin, Garfield -- non
-McLaughlin, Mariah -- consequatur
-Lang, Agustina -- pariatur
-Bradtke, Nikko -- et
-Adams, Luis -- error
-Lehner, Matilde -- nesciunt
-Ortiz, Anita -- fuga
-Koch, Berry -- vel
-Cartwright, Nicolas -- et
-Fisher, Elmo -- non
-Kunze, Gertrude -- voluptatem
-Stanton, Davin -- porro
-O'Conner, Constantin -- veritatis
-Runolfsdottir, Roy -- et
-Rogahn, Colby -- quisquam
-Tromp, Ryley -- est
-Hoppe, Stanley -- est
-Shanahan, Bethel -- rerum
-Hills, Samanta -- aut
-McGlynn, Thad -- sed
-Lynch, Norma -- expedita
-Bahringer, Lennie -- aliquam
-Tillman, Madison -- praesentium
-Stoltenberg, Donna -- ratione
+Graham, Mckenna
+Marvin, Garfield
+McLaughlin, Mariah
+Lang, Agustina
+Bradtke, Nikko
+Adams, Luis
+Lehner, Matilde
+Ortiz, Anita
+Koch, Berry
+Cartwright, Nicolas
+Fisher, Elmo
+Kunze, Gertrude
+Stanton, Davin
+O, Conner
+Runolfsdottir, Roy
+Rogahn, Colby
+Tromp, Ryley
+Hoppe, Stanley
+Shanahan, Bethel
+Hills, Samanta
+McGlynn, Thad
+Lynch, Norma
+Bahringer, Lennie
+Tillman, Madison
+Stoltenberg, Donna
 
 
 7. The modified names are:
 ________________________________________
-Stoltenberg, Mckenna -- ut
-Tillman, Garfield -- non
-Bahringer, Mariah -- consequatur
-Lynch, Agustina -- pariatur
-McGlynn, Nikko -- et
-Hills, Luis -- error
-Shanahan, Matilde -- nesciunt
-Hoppe, Anita -- fuga
-Tromp, Berry -- vel
-Rogahn, Nicolas -- et
-Runolfsdottir, Elmo -- non
-O'Conner, Gertrude -- voluptatem
-Stanton, Davin -- porro
-Kunze, Constantin -- veritatis
-Fisher, Roy -- et
-Cartwright, Colby -- quisquam
-Koch, Ryley -- est
-Ortiz, Stanley -- est
-Lehner, Bethel -- rerum
-Adams, Samanta -- aut
-Bradtke, Thad -- sed
-Lang, Norma -- expedita
-McLaughlin, Lennie -- aliquam
-Marvin, Madison -- praesentium
-Graham, Donna -- ratione
+Stoltenberg, Mckenna
+Tillman, Garfield
+Bahringer, Mariah
+Lynch, Agustina
+McGlynn, Nikko
+Hills, Luis
+Shanahan, Matilde
+Hoppe, Anita
+Tromp, Berry
+Rogahn, Nicolas
+Runolfsdottir, Elmo
+O, Gertrude
+Stanton, Davin
+Kunze, Conner
+Fisher, Roy
+Cartwright, Colby
+Koch, Ryley
+Ortiz, Stanley
+Lehner, Bethel
+Adams, Samanta
+Bradtke, Thad
+Lang, Norma
+McLaughlin, Lennie
+Marvin, Madison
+Graham, Donna
 
 
