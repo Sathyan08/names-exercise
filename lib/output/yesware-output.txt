@@ -41,7 +41,7 @@ Stephania, 31
 Tara, 32
 
 
-6. The first  completely unique names are:
+6. The first 25 completely unique names are:
 ________________________________________
 Graham, Mckenna
 Marvin, Garfield
