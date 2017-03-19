@@ -6,10 +6,6 @@ $LOAD_PATH << __dir__
 require 'active_support/all'
 require_all './lib/models'
 
-unless ENV['APP_MODE'] == 'production'
-  require 'pry'
-end
-
 task :run do
   input_file_path = ENV['INPUT_FILE_PATH'] || './lib/input/yesware-test-data-v1.txt'
   output_file_path = ENV['OUTPUT_FILE_PATH'] || './lib/output/yesware-output.txt'
