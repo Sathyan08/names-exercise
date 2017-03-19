@@ -15,7 +15,9 @@ module Names
       last_name_registry[name.last_name] += 1
 
       completely_unique_name_registry << name if completely_unique_name?(name)
-      name
+
+      # This returns self to provide similar output to the array shovel operator, which returns the array itself.
+      self
     end
 
     def unique_full_names_registry
