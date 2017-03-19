@@ -4,11 +4,15 @@ module Names
   class CollectionBuilder
     LAST_NAME_COLUMN = 0
     FIRST_NAME_COLUMN = 1
+    CHARACTERS_REGEX = /[a-zA-Z]/
 
-    def self.build(csv_file_path, unique_names_list_length = 25)
+    def self.build(file_path, unique_names_list_length = 25)
       name_collection = Names::Collection.new(unique_names_list_length)
 
-      CSV.foreach(csv_file_path) do |row|
+      File.readlines(file_path).each do |line|
+        next unless CHARACTERS_REGEX.match(line[0]).present?
+
+        row = line.split(',')
         first_name = row[FIRST_NAME_COLUMN].strip
         last_name = row[LAST_NAME_COLUMN].strip
 

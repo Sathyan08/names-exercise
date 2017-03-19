@@ -1,44 +1,101 @@
 1. The unique count of full names is:
 ________________________________________
-7
+49992
 
 
 2. The unique count of last names is:
 ________________________________________
-4
+475
 
 
 3. The unique count of first names is:
 ________________________________________
-5
+46487
 
 
 4. The ten most common last names are:
 ________________________________________
-Thomas, 1
-Vasquez, 1
-Upton, 2
-Smith, 3
+Crist, 127
+Becker, 128
+Johns, 128
+Romaguera, 128
+Terry, 129
+Hills, 130
+Hilll, 134
+Ortiz, 135
+Lang, 136
+Barton, 143
 
 
 5. The ten most common first names are:
 ________________________________________
-John, 1
-Sam, 1
-Tom, 1
-Cesar, 1
-Joan, 3
+Ramon -- et, 4
+Woodrow -- ut, 4
+Summer -- voluptatem, 5
+Julian -- est, 5
+Nolan -- ut, 5
+Rasheed -- et, 5
+Enrico -- qui, 5
+Mitchel -- et, 5
+Rex -- et, 6
+Jacinto -- et, 6
 
 
 6. The first  completely unique names are:
 ________________________________________
-Smith, Joan
-Vasquez, Cesar
+Graham, Mckenna -- ut
+Marvin, Garfield -- non
+McLaughlin, Mariah -- consequatur
+Lang, Agustina -- pariatur
+Bradtke, Nikko -- et
+Adams, Luis -- error
+Lehner, Matilde -- nesciunt
+Ortiz, Anita -- fuga
+Koch, Berry -- vel
+Cartwright, Nicolas -- et
+Fisher, Elmo -- non
+Kunze, Gertrude -- voluptatem
+Stanton, Davin -- porro
+O'Conner, Constantin -- veritatis
+Runolfsdottir, Roy -- et
+Rogahn, Colby -- quisquam
+Tromp, Ryley -- est
+Hoppe, Stanley -- est
+Shanahan, Bethel -- rerum
+Hills, Samanta -- aut
+McGlynn, Thad -- sed
+Lynch, Norma -- expedita
+Bahringer, Lennie -- aliquam
+Tillman, Madison -- praesentium
+Stoltenberg, Donna -- ratione
 
 
 7. The modified names are:
 ________________________________________
-Vasquez, Joan
-Smith, Cesar
+Stoltenberg, Mckenna -- ut
+Tillman, Garfield -- non
+Bahringer, Mariah -- consequatur
+Lynch, Agustina -- pariatur
+McGlynn, Nikko -- et
+Hills, Luis -- error
+Shanahan, Matilde -- nesciunt
+Hoppe, Anita -- fuga
+Tromp, Berry -- vel
+Rogahn, Nicolas -- et
+Runolfsdottir, Elmo -- non
+O'Conner, Gertrude -- voluptatem
+Stanton, Davin -- porro
+Kunze, Constantin -- veritatis
+Fisher, Roy -- et
+Cartwright, Colby -- quisquam
+Koch, Ryley -- est
+Ortiz, Stanley -- est
+Lehner, Bethel -- rerum
+Adams, Samanta -- aut
+Bradtke, Thad -- sed
+Lang, Norma -- expedita
+McLaughlin, Lennie -- aliquam
+Marvin, Madison -- praesentium
+Graham, Donna -- ratione
 
 
