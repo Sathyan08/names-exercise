@@ -19,14 +19,6 @@ module Names
       @completely_unique_name_registry = completely_unique_name_registry
     end
 
-    def sorted_last_name_registry
-      @sorted_last_name_registry ||= name_collection.last_name_registry.sort_by { |name, count| count }
-    end
-
-    def sorted_first_name_registry
-      @sorted_first_name_registry ||= name_collection.first_name_registry.sort_by { |name, count| count }
-    end
-
     def formatted_answers_collection
       answers_collection.each_with_index.map { |answer, index| formatted_answer(answer, index)  }
     end
