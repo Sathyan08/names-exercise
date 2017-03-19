@@ -17,6 +17,7 @@ module Names
       @first_name_registry = first_name_registry.sort_by(&:last)
       @last_name_registry = last_name_registry.sort_by(&:last)
       @completely_unique_name_registry = completely_unique_name_registry
+      @unique_names_list_length = unique_names_list_length
     end
 
     def formatted_answers_collection
