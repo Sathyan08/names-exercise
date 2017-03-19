@@ -1,44 +1,44 @@
 1. The unique count of full names is:
 ________________________________________
-48439
+48418
 
 
 2. The unique count of last names is:
 ________________________________________
-470
+468
 
 
 3. The unique count of first names is:
 ________________________________________
-3012
+3006
 
 
 4. The ten most common last names are:
 ________________________________________
+Crist, 127
 Becker, 128
-Johns, 128
 Romaguera, 128
+Johns, 128
 Terry, 129
 Hills, 130
 Hilll, 134
 Ortiz, 135
 Lang, 136
 Barton, 143
-O, 614
 
 
 5. The ten most common first names are:
 ________________________________________
+Baron, 29
+Summer, 29
+Charlotte, 29
+Heath, 29
+Kayley, 29
+Kaycee, 30
 Keon, 31
+Andreanne, 31
 Stephania, 31
 Tara, 32
-Hara, 104
-Kon, 106
-Keefe, 108
-Connell, 109
-Reilly, 109
-Amore, 120
-Conner, 124
 
 
 6. The first  completely unique names are:
@@ -56,7 +56,6 @@ Cartwright, Nicolas
 Fisher, Elmo
 Kunze, Gertrude
 Stanton, Davin
-O, Conner
 Runolfsdottir, Roy
 Rogahn, Colby
 Tromp, Ryley
@@ -68,34 +67,35 @@ Lynch, Norma
 Bahringer, Lennie
 Tillman, Madison
 Stoltenberg, Donna
+Dickinson, Sonya
 
 
 7. The modified names are:
 ________________________________________
-Stoltenberg, Mckenna
-Tillman, Garfield
-Bahringer, Mariah
-Lynch, Agustina
-McGlynn, Nikko
-Hills, Luis
-Shanahan, Matilde
-Hoppe, Anita
-Tromp, Berry
-Rogahn, Nicolas
-Runolfsdottir, Elmo
-O, Gertrude
+Dickinson, Mckenna
+Stoltenberg, Garfield
+Tillman, Mariah
+Bahringer, Agustina
+Lynch, Nikko
+McGlynn, Luis
+Hills, Matilde
+Shanahan, Anita
+Hoppe, Berry
+Tromp, Nicolas
+Rogahn, Elmo
+Runolfsdottir, Gertrude
 Stanton, Davin
-Kunze, Conner
-Fisher, Roy
-Cartwright, Colby
-Koch, Ryley
-Ortiz, Stanley
-Lehner, Bethel
-Adams, Samanta
-Bradtke, Thad
-Lang, Norma
-McLaughlin, Lennie
-Marvin, Madison
-Graham, Donna
+Kunze, Roy
+Fisher, Colby
+Cartwright, Ryley
+Koch, Stanley
+Ortiz, Bethel
+Lehner, Samanta
+Adams, Thad
+Bradtke, Norma
+Lang, Lennie
+McLaughlin, Madison
+Marvin, Donna
+Graham, Sonya
 
 
