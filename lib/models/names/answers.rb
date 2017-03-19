@@ -14,8 +14,8 @@ module Names
 
     def initialize(unique_full_names_registry:, first_name_registry:, last_name_registry:, completely_unique_name_registry:, unique_names_list_length:)
       @unique_full_names_registry = unique_full_names_registry
-      @first_name_registry = first_name_registry.sort_by { |name, count| }
-      @last_name_registry = last_name_registry.sort_by { |name, count| }
+      @first_name_registry = first_name_registry.sort_by(&:last)
+      @last_name_registry = last_name_registry.sort_by(&:last)
       @completely_unique_name_registry = completely_unique_name_registry
     end
 
