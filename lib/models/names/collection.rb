@@ -20,7 +20,7 @@ module Names
       first_name_registry[name.first_name] += 1
       last_name_registry[name.last_name] += 1
 
-      completely_unique_name_registry << name if completely_unique_name?(name)
+      completely_unique_name_registry << name if should_register_as_completely_unique?(name)
 
       # This returns self to provide similar output to the array shovel operator, which returns the array itself.
       self
@@ -46,6 +46,10 @@ module Names
 
     def initialize(unique_names_list_length = 25)
       @unique_names_list_length = unique_names_list_length
+    end
+
+    def should_register_as_completely_unique?(name)
+      completely_unique_name_registry.count < unique_names_list_length && completely_unique_name?(name)
     end
 
     def completely_unique_name?(name)
